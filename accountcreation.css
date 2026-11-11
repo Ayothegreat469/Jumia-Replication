@@ -1,0 +1,126 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+
+.creation-logo {
+    width: 180px;
+    max-height: 65px;
+    object-fit: contain;
+}
+
+.welcome h4 {
+    margin: 0 0 8px;
+    font-size: 20px;
+}
+
+.welcome p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.Email-Form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 290px;
+}
+
+.Email-Form input,
+.Email-Form button {
+    width: 100%;
+    height: 42px;
+}
+
+.Email-Form input {
+    padding: 10px;
+}
+
+.Email-Form button {
+    background-color: orange;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.login-text {
+    margin: 0;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.facebook {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.google {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.terms p {
+    margin: 0 0 8px;
+}
+
+.terms div {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.terms a {
+    color: orange;
+    font-size: 14px;
+}
+
+.help {
+    font-size: 13px;
+    margin: 0 10px;
+}
+
+.jumia-logo {
+    width: 100px;
+    max-height: 35px;
+    object-fit: contain;
+}
+
+@media (max-height: 650px) {
+    body {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .creation-logo {
+        width: 140px;
+    }
+
+    .facebook {
+        width: 45px;
+        height: 45px;
+    }
+
+    .google {
+        width: 40px;
+        height: 40px;
+    }
+}

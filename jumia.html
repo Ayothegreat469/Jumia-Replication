@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jumia</title>
+
+    <!-- Font Awesome 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+</head>
+
+<link rel="stylesheet" href="jumia.css">
+
+<body style="background-color: white;">
+
+
+
+    <!-- NAVIGATION -->
+    <nav>
+
+        <div class="nav-one">
+            <img src="Assets/logo_jumia.svg" alt="Jumia Logo">
+
+            <div class="searchbar">
+                <i style="padding-left: 15px;" class="fa-solid fa-magnifying-glass"></i>
+
+                <input class="inner-searchbar" type="search" placeholder="Search Products, brands and categories">
+
+                <button class="search-button" type="submit">Search</button>
+            </div>
+
+            <div>
+                <a href="accountcreation.html"><button class="topbar-button">
+                    <i class="fa-regular fa-user"></i>
+                    Account
+                    <i class="fa-solid fa-angle-down"></i>
+                </button></a>
+
+                <button class="topbar-button">
+                    <i class="fa-regular fa-circle-question"></i>
+                    Help
+                    <i class="fa-solid fa-angle-down"></i>
+                </button>
+
+                <button class="topbar-button">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Cart
+                </button>
+            </div>
+        </div>
+
+
+        <div class="nav-two-wrapper">
+
+            <button class="nav-two-btn nav-two-left" id="nav-two-left" aria-label="Scroll categories left">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <nav class="nav-two" id="nav-two">
+                <ul class="nav-two-child">
+                    <li><i class="fa-solid fa-bag-shopping"></i> Official Store</li>
+                    <li><i class="fa-solid fa-house-user"></i> Appliances</li>
+                    <li><i class="fa-solid fa-mobile"></i> Phones & Tablets</li>
+                    <li><i class="fa-solid fa-prescription-bottle-medical"></i> Health and Beauty</li>
+                    <li><i class="fa-solid fa-briefcase"></i> Home & Office</li>
+                    <li><i class="fa-solid fa-microchip"></i> Electronics</li>
+                    <li><i class="fa-solid fa-shirt"></i> Fashion</li>
+                    <li><i class="fa-solid fa-apple-whole"></i> Supermarket</li>
+                    <li><i class="fa-solid fa-display"></i> Computing</li>
+                    <li><i class="fa-solid fa-baby"></i> Baby products</li>
+                    <li><i class="fa-solid fa-gamepad"></i> Gaming</li>
+                    <li><i class="fa-solid fa-ellipsis"></i> Other categories</li>
+                </ul>
+            </nav>
+
+            <button class="nav-two-btn nav-two-right" id="nav-two-right" aria-label="Scroll categories right">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+        </div>
+
+
+    </nav>
+
+
+    <!-- MAIN BANNER -->
+    <div class="slider">
+
+        <div class="controls">
+            <button class="move-left-one" onclick="previousImage()">&lt;</button>
+            <img id="image" src="Assets/BEYOND-THE-BRAND.jpg">
+            <button class="move-right-one" onclick="nextImage()">&gt;</button>
+        </div>
+    </div>
+
+
+    <!-- CATEGORY SLIDER -->
+    <div>
+
+        <button class="move-left-two" id="slider-left-two">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="category-images">
+
+            <img src="Assets/call-to-order.png" alt="Call to Order">
+
+            <img src="Assets/jumia-delivery.png" alt="Jumia Delivery">
+
+            <img style="border-radius: 20px;" src="Assets/BANGER-DEALS-ezgif.com-optimize.gif" alt="Banger Deals">
+
+            <img src="Assets/buy2-1.png" alt="Buy 2">
+
+            <img style="border-radius: 20px;" src="Assets/trendyol.png" alt="Trendyol">
+
+            <img src="Assets/new-arrival.png" alt="New Arrival">
+
+            <img src="Assets/shoes-.png" alt="Shoes">
+
+        </div>
+
+        <button class="move-right-two" id="slider-right-two">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+    </div>
+
+
+
+
+    <!-- FLASH SALES -->
+
+    <!-- FLASH SALES -->
+    <section class="flash-sales-section">
+        <div class="flash-sales-header">
+            <div class="flash-sales-title">
+                <i class="fa-solid fa-bolt"></i>
+                <div>
+                    <h2>Flash Sales</h2>
+                </div>
+            </div>
+
+            <div class="flash-sales-countdown">
+                <span>TIME LEFT:</span>
+                <div class="countdown-unit" id="hours">05</div>
+                <b>:</b>
+                <div class="countdown-unit" id="minutes">00</div>
+                <b>:</b>
+                <div class="countdown-unit" id="seconds">00</div>
+            </div>
+
+            <button class="flash-sales-see-all">
+                See All <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+
+        <div class="flash-sales-progress">
+            <div></div>
+        </div>
+
+        <div class="flash-sales-products" id="flash-sales-products">
+            <!-- Product cards are added here using JavaScript -->
+        </div>
+    </section>
+
+
+
+    <!-- DEALS OF THE DAY -->
+    <div>
+
+
+
+        <div class="deals">
+
+            <img src="Assets/DEALS.gif" alt="Deals">
+
+            <img src="Assets/deals-of-the-day-asus.jpg" alt="ASUS Deal">
+
+            <img src="Assets/deals-of-the-day-hisense.jpg" alt="Hisense Deal">
+
+            <img src="Assets/deals-of-the-day-nivea.jpg" alt="Nivea Deal">
+
+            <img src="Assets/deals-of-the-day-mit.jpg" alt="MIT Deal">
+
+            <img src="Assets/DEALS.gif" alt="Deals">
+
+        </div>
+
+    </div>
+
+    <!-- ALL YOUR ESSENTIALS IN ONE PLACE -->
+    <div>
+        <p>All Your Essentials in One Place</p>
+        <div class="essentials-grid">
+            <img src="Assets/essential-1.png" style="height: 140.33px;">
+            <p>Appliance deals</p>
+            <img src="Assets/essential-2.png" style="height: 140.33px;">
+            <p>Beauty Must Have</p>
+            <img src="Assets/essential-3.png" style="height: 140.33px;">
+            <p>Computing Deals</p>
+            <img src="Assets/essential-4.png" style="height: 140.33px;">
+            <p>Home & Office deals</p>
+            <img src="Assets/essential-5.png" style="height: 140.33px;">
+            <p>Sneakers deals</p>
+            <img src="Assets/essential-6.png" style="height: 140.33px;">
+            <p>Mobile Accessories deals</p>
+            <img src="Assets/essential-7.png" style="height: 140.33px;">
+            <p>Fashion deals</p>
+            <img src="Assets/essential-8.png" style="height: 140.33px;">
+            <p>Supermarket deals</p>
+            <img src="Assets/essential-9.png" style="height: 140.33px;">
+            <p>Television deals</p>
+            <img src="Assets/essential-10.png" style="height: 140.33px;">
+            <p>Kids, Baby And More</p>
+            <img src="Assets/essential-11.png" style="height: 140.33px;">
+            <p>Phones & Tablets</p>
+            <img src="Assets/Final.png" style="height: 140.33px;">
+            <p>Brand Festival Powered By</p>
+        </div>
+    </div>
+
+    <div class="design-1">
+        <p>Top Sellers</p>
+        <p>Up to 50% off</p>
+        <button>
+            See All
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button class="arrow" id="slider-left-1">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div></div>
+        <button class="arrow" id="slider-right-1">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <div class="design-2">
+        <p>Sponsered Products</p>
+        <button class="arrow" id="slider-left-1">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div></div>
+        <button class="arrow" id="slider-right-1">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <div class="design-1">
+        <p>Brand Festival deals</p>
+        <p>Up to 70% off</p>
+        <button>
+            See All
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button class="arrow" id="slider-left-1">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div></div>
+        <button class="arrow" id="slider-right-1">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <div class="design-2">
+        <p>Top selling items</p>
+        <button>
+            See All
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button class="arrow" id="slider-left-1">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div></div>
+        <button class="arrow" id="slider-right-1">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <div class="design-1">
+        <p>Samsung Official Store</p>
+        <button>
+            See All
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button class="arrow" id="slider-left-1">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div></div>
+        <button class="arrow" id="slider-right-1">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <div class="design-2">
+        <!-- SUB-SECTION -->
+        <button class="arrow" id="slider-left-1">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div></div>
+        <button class="arrow" id="slider-right-1">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <div class="design-1">
+        <p>Deals On Air Conditioners</p>
+        <button>
+            See All
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button class="arrow" id="slider-left-1">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div></div>
+        <button class="arrow" id="slider-right-1">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <div class="design-2">
+        <p>Smart TVs deals</p>
+        <button>
+            See All
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button class="arrow" id="slider-left-1">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div></div>
+        <button class="arrow" id="slider-right-1">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <div class="design-1">
+        <p>Kitchen And Dining deals</p>
+        <button>
+            See All
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button class="arrow" id="slider-left-1">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div></div>
+        <button class="arrow" id="slider-right-1">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <div class="design-2">
+        <p>Health and Relaxation deals</p>
+        <button>
+            See All
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button class="arrow" id="slider-left-1">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div></div>
+        <button class="arrow" id="slider-right-1">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <div class="design-1">
+        <p>Men's Clothing - Trouser & Chinos</p>
+        <button>
+            See All
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button class="arrow" id="slider-left-1">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div></div>
+        <button class="arrow" id="slider-right-1">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <div class="design-2">
+        <p>Hikers Official Store</p>
+        <button>
+            See All
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button class="arrow" id="slider-left-1">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div></div>
+        <button class="arrow" id="slider-right-1">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <div class="design-1">
+        <p>Beyond The Brand</p>
+        <button>
+            See All
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button class="arrow" id="slider-left-1">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div></div>
+        <button class="arrow" id="slider-right-1">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <div class="design-2">
+        <p>Computing Deals</p>
+        <button>
+            See All
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button class="arrow" id="slider-left-1">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div></div>
+        <button class="arrow" id="slider-right-1">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <div class="design-1">
+        <p>Mobile Accessories deals</p>
+        <button>
+            See All
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button class="arrow" id="slider-left-1">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div></div>
+        <button class="arrow" id="slider-right-1">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <div class="design-2">
+        <p>Kids Play Nest (Toys)</p>
+        <p>Kids Corner</p>
+        <button>
+            See All
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button class="arrow" id="slider-left-1">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div></div>
+        <button class="arrow" id="slider-right-1">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <div class="design-1">
+        <p>Hot deals right now</p>
+        <p>Pay On Delivery</p>
+        <button>
+            See All
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button class="arrow" id="slider-left-1">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div></div>
+        <button class="arrow" id="slider-right-1">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <div class="design-2">
+        <p>Jumia Bar - Gin & Vodka</p>
+        <p>18+ ( Drink Responsibly)</p>
+        <button>
+            See All
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button class="arrow" id="slider-left-1">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div></div>
+        <button class="arrow" id="slider-right-1">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <div class="design-1">
+        <p>Games & Consoles</p>
+        <button>
+            See All
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button class="arrow" id="slider-left-1">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div></div>
+        <button class="arrow" id="slider-right-1">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <div style="box-shadow: inset; height: 400px; width: 1200px; padding-left: 50px;">
+        <h2>Jumia Nigeria - Nigeria's No. 1 Shopping Destination</h2>
+        <br>
+        <h3>Shop for Everything You Need on Jumia Nigeria</h3>
+        <br>
+        <p>Jumia Nigeria is the largest online shopping website in Nigeria. We offer a platform where customers in any
+            part of Nigeria can find and shop for all they need in one online store and that platform is the Jumia
+            shopping website. On the Jumia mobile app or website, you can shop from the comfort of your home or during
+            work breaks and get everything delivered fast without you having to stress or move an inch. Be it fashion,
+            electronics, mobile phones, computers, or your everyday groceries you can get everything you need on Jumia
+            online store.</p>
+        <br>
+        <p>Beyond shopping, you can also make money online through the Jumia JForce program by helping others place
+            orders on Jumia and earning commission on every successful delivery. It is a simple and flexible way for
+            students, entrepreneurs, and anyone looking for extra income to turn their network into steady earnings.
+
+            Have you used the Jumia online store today? Shop now on Jumia to enjoy a seamless online shopping
+            experience. With fast delivery, free returns, and flexible payment options, you are certain to enjoy the
+            convenience of shopping online.
+        </p>
+        <br>
+        <p>Shop for Original and Quality Items at The Best Prices</p>
+        <p>Jumia Nigeria prides itself in giving the best prices and the best quality of products you can find anywhere
+            in the country. Our strong partnership with top brands like Oraimo, Samsung, Infinix, Xiaomi, Diageo, Tecno,
+            Adidas, Nike, Trendyol, etc. guarantees our customers the cheapest prices on original brand products. Beyond
+            that, customers also have exclusive access to the latest product released by these top brands. If you enjoy
+            exclusivity, the Jumia Official Store is the right place for you. On the Jumia official stores, you can
+            experience product launches and be among the first set of people in Nigeria to own new products. You can
+            also enjoy huge offers on brand days that come with heavy discounts on various products ranging from mobile
+            phones to drinks, clothing items, sneakers, and many more!
+
+            Explore our official stores today to see a wide range of popular brands that sell directly on our platform
+            and get assured of the best prices and quality of products you buy on Jumia.
+        </p>
+        <br>
+        <h4>Shop the Latest Fashion and Trendy Outfits Online</h4>
+        <p>Discover an extensive range of fashion items for women, men, and kids on Jumia. Our women's fashion
+            collection includes a diverse selection of clothing such as blouses, pants, and jeans. We also offer a
+            variety of gowns in different lengths and materials to suit your individual style. Additionally, browse
+            through our unique fashion accessories like shoes, bags, jewelry, and sunglasses, all at unbeatable prices.
+
+            For men's fashion, Jumia has an impressive collection of stylish clothing pieces that can make a statement.
+            Find quality men's trousers, shoes, shirts, watches and suits at the most affordable prices. Sports
+            enthusiasts can also get their hands on quality gym wear, trendy sneakers, and other sportswear items.
+
+            At Jumia, we haven't forgotten about the little ones. Browse through our selection of baby clothes for boys
+            and girls and their accessories. Shop now on Jumia Nigeria and enjoy an incredible online shopping
+            experience.</p>
+
+    </div>
+    <br>
+
+    
+<footer class="jumia-footer">
+  <div class="footer-newsletter">
+    <div class="newsletter-brand">
+      <h2>JUMIA</h2>
+      <p>PAY LESS, LIVE MORE!</p>
+    </div>
+
+    <div class="newsletter-content">
+      <h3>NEW TO JUMIA?</h3>
+      <p>Subscribe to our newsletter to get updates on our latest offers!</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter E-mail Address">
+        <button type="submit">SUBSCRIBE</button>
+      </form>
+      <label>
+        <input type="checkbox">
+        I agree to Jumia's Privacy and Cookie Policy.
+      </label>
+    </div>
+
+    <div class="newsletter-app">
+      <h3>DOWNLOAD JUMIA FREE APP</h3>
+      <p>Get access to exclusive offers!</p>
+      <div class="app-buttons">
+        <a href="#">▶ Google Play</a>
+        <a href="#">App Store</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-main">
+    <div class="footer-column">
+      <h4>LET US HELP YOU</h4>
+      <a href="#">Help Center</a>
+      <a href="#">How to Buy on Jumia</a>
+      <a href="#">Delivery Options</a>
+      <a href="#">Return Policy</a>
+      <a href="#">Corporate & Bulk Purchases</a>
+      <a href="#">Report a Product</a>
+      <a href="#">Dispute Resolution Policy</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>ABOUT JUMIA</h4>
+      <a href="#">About Us</a>
+      <a href="#">Jumia Careers</a>
+      <a href="#">Terms and Conditions</a>
+      <a href="#">Privacy Notice</a>
+      <a href="#">Jumia Express</a>
+      <a href="#">Jumia Global</a>
+      <a href="#">Flash Sales</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>MAKE MONEY WITH JUMIA</h4>
+      <a href="#">Sell on Jumia</a>
+      <a href="#">Become an Affiliate</a>
+      <a href="#">Become a Logistics Partner</a>
+      <a href="#">Vendor Hub</a>
+      <a href="#">Start Selling</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>JUMIA INTERNATIONAL</h4>
+      <a href="#">Algeria</a>
+      <a href="#">Egypt</a>
+      <a href="#">Ghana</a>
+      <a href="#">Ivory Coast</a>
+      <a href="#">Kenya</a>
+      <a href="#">Morocco</a>
+      <a href="#">Senegal</a>
+      <a href="#">Uganda</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>JOIN US ON</h4>
+      <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter / X</a>
+        <a href="#">YouTube</a>
+        <a href="#">TikTok</a>
+      </div>
+
+      <h4 class="payment-heading">PAYMENT METHODS</h4>
+      <div class="payment-methods">
+        <span>VISA</span>
+        <span>Mastercard</span>
+        <span>Verve</span>
+        <span>Pay on Delivery</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-logo">JUMIA</div>
+    <p>© 2026 Jumia. All rights reserved.</p>
+    <div class="bottom-links">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Cookies</a>
+    </div>
+  </div>
+</footer>
+
+
+
+
+    <script src="jumia.js"></script>
+
+</body>
+
+</html>
